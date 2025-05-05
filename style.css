@@ -1,0 +1,36 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+
+#background {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.bouncing-image {
+    position: absolute;
+    width: 100px; /* Размер изображения */
+    height: auto;
+    transition: transform 0.1s ease;
+}
+
+.trail {
+    position: absolute;
+    width: 5dvb; /* Увеличенный размер следа */
+    height: 50px; /* Увеличенный размер следа */
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
